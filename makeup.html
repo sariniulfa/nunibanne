@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alat Makeup Eksklusif</title>
+  <!-- Link ke Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+      background-color: #d63384;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      color: #fff !important;
+    }
+
+    .hero-section {
+      background-image: url('latar belakang.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card-body {
+      padding: 15px;
+    }
+
+    .product-card-body h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product-card-body p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: #e83e8c;
+      color: white;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #d63384;
+    }
+
+    .footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">NUNI Makeup Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Tentang Kami</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div>
+      <h1>Temukan Makeup Terbaik Anda</h1>
+      <p>Produk premium untuk tampilan yang memukau setiap hari</p>
+    </div>
+  </div>
+
+  <!-- Produk Grid -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Koleksi Produk Kami</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="brush makeup.jpg" alt="Brush Makeup">
+        <div class="product-card-body">
+          <h5>Brush Makeup</h5>
+          <p>Brush berkualitas untuk aplikasi makeup yang sempurna.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="lipstik.jpg" alt="Lipstick">
+        <div class="product-card-body">
+          <h5>Lipstick</h5>
+          <p>Warna bibir tahan lama yang memukau.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="foundation.jpg" alt="Foundation">
+        <div class="product-card-body">
+          <h5>Foundation</h5>
+          <p>Ciptakan tampilan kulit sempurna dengan foundation kami.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="mascara.jpg" alt="Mascara">
+        <div class="product-card-body">
+          <h5>Mascara</h5>
+          <p>Bulu mata lebih panjang dan tebal dalam sekejap.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="blush on.jpg" alt="Blush On">
+        <div class="product-card-body">
+          <h5>Blush On</h5>
+          <p>Pipi cerah dan merona alami.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="eyeshadow.jpg" alt="Eyeshadow">
+        <div class="product-card-body">
+          <h5>Eyeshadow</h5>
+          <p>Warna eyeshadow yang memukau untuk tampilan sempurna.</p>
+          <a href="#" class="btn">Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Makeup Store. Semua Hak Dilindungi.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
